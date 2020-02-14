@@ -20,7 +20,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white container ">
+      <!---Navbar with Logo-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white container">
         <!---MTGA logo-->
         <a class="navbar-brand ml-auto mr-auto" href="#">
           <div class="d-inline-flex">
@@ -131,6 +132,95 @@
         </div>
       </nav>
     </header>
+    <main>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" style="max-height:450px">
+          <div class="carousel-item active">
+            <img
+              srcset="
+                resources/carousel/theros-wallpaper1900.jpg 1900w,
+                resources/carousel/theros-wallpaper1400.jpg 1400w,
+                resources/carousel/theros-wallpaper800.jpg   800w,
+                resources/carousel/theros-wallpaper600.jpg   600w
+              "
+              sizes="(max-width:
+            600px) 600px, 
+            (max-width: 800px) 800px, (max-width: 1400px)
+            1400px, (max-width: 1900px) 1900px, 600px"
+              src="resources/carousel/theros-wallpaper600.jpg"
+              alt="theros"
+              class="d-block w-100"
+              max-height="300px"
+            />
+
+            <div
+              class="carousel-caption d-sm-block"
+              style="margin-bottom: 100px; position:absolute;"
+            >
+              <h5 style="font-size:2vw">
+                <strong>Theros Beyond Death</strong> - the new card set
+              </h5>
+              <p style="font-size:10px; text-align:center; ">
+                "In <em>Theros</em>, the pantheon of gods vies for undying
+                devotion among their mortal subjects. But in the Underworld,
+                there is only one master: the Lord of the Dead. Break free from
+                death's shackles as a hero reborn. Choose your god and fight in
+                their name...or forge a destiny all your own."
+              </p>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
