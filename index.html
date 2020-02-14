@@ -16,23 +16,120 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Discover the magic</title>
   </head>
   <body>
     <header>
-      <!---MTGA logo-->
-      <div class="d-inline-flex">
-        <div class="ml-3">
-          <img src="resources/mtgalogo1.svg" height="29px" />
+      <nav class="navbar navbar-expand-lg navbar-light bg-white container ">
+        <!---MTGA logo-->
+        <a class="navbar-brand ml-auto mr-auto" href="#">
+          <div class="d-inline-flex">
+            <div class="ml-3">
+              <img src="resources/mtgalogo1.svg" height="29px" />
+            </div>
+            <div class="ml-n5">
+              <img
+                src="resources/mtgalogo.svg"
+                height="30px"
+                style="background-color:black"
+              />
+            </div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navLinks"
+          aria-controls="navLinks"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-nav  d-flex align-items-end mr-auto ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewbox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                  <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+                <span class="sr-only">
+                  (current)
+                </span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="what-magic"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >What is MTG Arena?</a
+              >
+              <div class="dropdown-menu" aria-labelledby="what-magic">
+                <a class="dropdown-item" href="#">Introduction</a>
+                <a class="dropdown-item" href="#">Rules</a>
+                <a class="dropdown-item" href="#">Decks</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="how-to"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                How to play
+              </a>
+              <div class="dropdown-menu" aria-labelledby="how-to">
+                <a class="dropdown-item" href="#">Basics</a>
+                <a class="dropdown-item" href="#">Rules</a>
+                <a class="dropdown-item" href="#">Build your own deck</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tipps & Tricks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Questions & FAQ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="links"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Helpful Links
+              </a>
+              <div class="dropdown-menu" aria-labelledby="links">
+                <a class="dropdown-item" href="#">Official Site</a>
+                <a class="dropdown-item" href="#">Wiki</a>
+                <a class="dropdown-item" href="#">blah</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
         </div>
-        <div class="ml-n5">
-          <img
-            src="resources/mtgalogo.svg"
-            height="30px"
-            style="background-color:black"
-          />
-        </div>
-      </div>
+      </nav>
     </header>
 
     <!-- Optional JavaScript -->
