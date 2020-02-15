@@ -133,11 +133,8 @@
       </nav>
     </header>
     <main>
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-ride="carousel"
-      >
+      <!---Carousel-->
+      <div id="carouselPicCaption" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleCaptions"
@@ -147,28 +144,54 @@
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner" style="max-height:450px">
-          <div class="carousel-item active">
-            <img
-              srcset="
-                resources/carousel/theros-wallpaper1900.jpg 1900w,
-                resources/carousel/theros-wallpaper1400.jpg 1400w,
-                resources/carousel/theros-wallpaper800.jpg   800w,
-                resources/carousel/theros-wallpaper600.jpg   600w
-              "
-              sizes="(max-width:
-            600px) 600px, 
-            (max-width: 800px) 800px, (max-width: 1400px)
-            1400px, (max-width: 1900px) 1900px, 600px"
-              src="resources/carousel/theros-wallpaper600.jpg"
-              alt="theros"
-              class="d-block w-100"
-              max-height="300px"
-            />
 
+        <div
+          class="carousel-inner"
+          style="position:relative; align-items: stretch; display: flex; max-height:25vh"
+        >
+          <div class="carousel-item active">
+            <picture>
+              <source
+                media="(max-width: 599px)"
+                srcset="resources/carousel/theros-wallpaper600.jpg"
+              />
+              <source
+                media="(max-width: 799px)"
+                srcset="resources/carousel/theros-wallpaper800.jpg"
+              />
+              <source
+                media="(min-width: 800px)"
+                srcset="https://media.magic.wizards.com/mj69uyadck_0.jpg"
+              />
+              <img
+                src="resources/carousel/theros-wallpaper1400.jpg"
+                alt="theros"
+                class="d-block w-100 img-fluid"
+                max-height="25vh"
+              />
+            </picture>
+
+            <!---
+                <img
+                srcset="
+                  resources/carousel/theros-wallpaper600.jpg   600w,
+                  resources/carousel/theros-wallpaper800.jpg   800w,
+                  resources/carousel/theros-wallpaper1400.jpg 1400w,
+                  resources/carousel/theros-wallpaper1900.jpg 1900w
+                "
+                sizes="
+              (min-width: 200px) 100vw, 600px,
+              (min-width: 600px) 100vw, 800px, 
+              (min-width: 800px) 100vw, 1900px, 
+              (min-width: 1400px) 100vw, 1900px"
+                alt="theros"
+                class="d-block w-100 img-fluid"
+                src="resources/carousel/theros-wallpaper600.jpg"
+              />
+              --->
             <div
               class="carousel-caption d-sm-block"
-              style="margin-bottom: 100px; position:absolute;"
+              style="margin-bottom: 50px; position:absolute;"
             >
               <h5 style="font-size:2vw">
                 <strong>Theros Beyond Death</strong> - the new card set
