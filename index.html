@@ -134,7 +134,11 @@
     </header>
     <main>
       <!---Carousel-->
-      <div id="carouselPicCaption" class="carousel slide" data-ride="carousel">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-ride="carousel"
+      >
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleCaptions"
@@ -144,89 +148,77 @@
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
-
         <div
           class="carousel-inner"
           style="position:relative; align-items: stretch; display: flex; max-height:25vh"
         >
           <div class="carousel-item active">
-            <picture>
-              <source
-                media="(max-width: 599px)"
-                srcset="resources/carousel/theros-wallpaper600.jpg"
-              />
-              <source
-                media="(max-width: 799px)"
-                srcset="resources/carousel/theros-wallpaper800.jpg"
-              />
-              <source
-                media="(min-width: 800px)"
-                srcset="https://media.magic.wizards.com/mj69uyadck_0.jpg"
-              />
-              <img
-                src="resources/carousel/theros-wallpaper1400.jpg"
-                alt="theros"
-                class="d-block w-100 img-fluid"
-                max-height="25vh"
-              />
-            </picture>
-
-            <!---
+            <div>
+              <picture>
+                <source
+                  media="(max-width: 599px)"
+                  srcset="resources/carousel/theros-wallpaper600.jpg"
+                />
+                <source
+                  media="(max-width: 799px)"
+                  srcset="resources/carousel/theros-wallpaper800.jpg"
+                />
+                <source
+                  media="(max-width: 1399px)"
+                  srcset="resources/carousel/theros-wallpaper1400.jpg"
+                />
+                <source
+                  media="(min-width: 1400px)"
+                  srcset="resources/carousel/theros-wallpaper1900.jpg"
+                />
                 <img
-                srcset="
-                  resources/carousel/theros-wallpaper600.jpg   600w,
-                  resources/carousel/theros-wallpaper800.jpg   800w,
-                  resources/carousel/theros-wallpaper1400.jpg 1400w,
-                  resources/carousel/theros-wallpaper1900.jpg 1900w
-                "
-                sizes="
-              (min-width: 200px) 100vw, 600px,
-              (min-width: 600px) 100vw, 800px, 
-              (min-width: 800px) 100vw, 1900px, 
-              (min-width: 1400px) 100vw, 1900px"
-                alt="theros"
-                class="d-block w-100 img-fluid"
-                src="resources/carousel/theros-wallpaper600.jpg"
-              />
-              --->
-            <div
-              class="carousel-caption d-sm-block"
-              style="margin-bottom: 50px; position:absolute;"
-            >
-              <h5 style="font-size:2vw">
-                <strong>Theros Beyond Death</strong> - the new card set
-              </h5>
-              <p style="font-size:10px; text-align:center; ">
-                "In <em>Theros</em>, the pantheon of gods vies for undying
-                devotion among their mortal subjects. But in the Underworld,
-                there is only one master: the Lord of the Dead. Break free from
-                death's shackles as a hero reborn. Choose your god and fight in
-                their name...or forge a destiny all your own."
-              </p>
+                  src="resources/carousel/theros-wallpaper600.jpg"
+                  alt="theros"
+                  class="d-block w-100 img-fluid"
+                  max-height="25vh"
+                />
+
+                <div
+                  class="carousel-caption"
+                  style="position:absolute; 
+                  left: 3%; 
+                  right:70%; 
+                  top:2%;
+                  text-align:center; padding-bottom: 50px; text-size-adjust:auto;"
+                >
+                  <h5 style="font-size:1.2rem;">
+                    <a
+                      href="https://magic.wizards.com/en/products/TherosBeyondDeath"
+                      style="color:rgb(114, 176, 226)"
+                    >
+                      <strong>Theros Beyond Death</strong> <br />the new card
+                      set</a
+                    >
+                  </h5>
+                  <p class="d-none d-lg-block" style="font-size:0.8rem; ">
+                    "In <em>Theros</em>, the pantheon of gods vies for undying
+                    devotion among their mortal subjects. But in the Underworld,
+                    there is only one master: the Lord of the Dead. Break free
+                    from death's shackles as a hero reborn. Choose your god and
+                    fight in their name...or forge a destiny all your own."
+                  </p>
+                  <div class="d-none d-lg-block" style="font-size:0.8rem;">
+                    <a
+                      class="btn btn-info"
+                      href="https://magic.wizards.com/en/products/TherosBeyondDeath"
+                      role="button"
+                      >Explore...</a
+                    >
+                  </div>
+                </div>
+              </picture>
             </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
+        <!--
         <a
           class="carousel-control-prev"
-          href="#carouselExampleControls"
+          href="#carouselExampleCaptions"
           role="button"
           data-slide="prev"
         >
@@ -235,13 +227,14 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#carouselExampleControls"
+          href="#carouselExampleCaptions"
           role="button"
           data-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+        --->
       </div>
     </main>
 
