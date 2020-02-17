@@ -403,6 +403,111 @@
           </div>
         </div>
       </section>
+      <hr />
+      <!---Basic Card structure-->
+      <section>
+        <div class="container">
+          <!---Intro to popover card-->
+          <div class="row ">
+            <div class="col d-flex justify-content-center">
+              <h2 style="font-size: 24px; font-family: Roboto bold;">
+                Here you can find an example card to show you the basic
+                structure of a
+                <strong>Magic</strong> card.
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <h3
+                style="font-size: 18px; font-family: Roboto light; padding-top:5px"
+              >
+                Try to hover over the different parts of the card...
+              </h3>
+            </div>
+          </div>
+          <!---Example card img with popovers-->
+          <div
+            class="row"
+            style="background-image:url('resources/blurcard.jpg');  background-repeat: no-repeat; background-size:contain;
+          background-position:center;"
+          >
+            <div class="col">
+              <div
+                class="mx-auto d-flex justify-content-center"
+                style="margin-top:20px; padding-top: 10px; "
+              >
+                <div class="p-2">
+                  <div style="position:relative;">
+                    <img src="resources/example-card.png" alt="example card" />
+                    <a
+                      href="#"
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-html="true"
+                      title="Card Name"
+                      data-content="This shows the card's name."
+                      data-placement="left"
+                      style="position: absolute; left: 4.53%; top: 4.05%; width: 55.47%; height: 6.22%; z-index: 2;"
+                    ></a>
+                    <a
+                      href="#"
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-html="true"
+                      title="Card Type"
+                      data-content="This tells you the card's card type: <em>artefact, enchantment, creature, instant, land, planeswalker,</em> or <em>sorcery</em>."
+                      data-placement="left"
+                      style="position: absolute; left: 4.91%; top: 55.41%; width: 55.47%; height: 6.22%; z-index: 2;"
+                    ></a>
+                    <a
+                      href="#"
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-html="true"
+                      title="Mana Cost"
+                      data-content="<strong>Mana</strong> is the main resource in the game. The symbols here tell you the cost to cast the spell/card."
+                      data-placement="right"
+                      style="position: absolute; left: 76.23%; top: 5.14%; width: 18.49%; height: 6.22%; z-index: 2;"
+                    ></a>
+                    <a
+                      href="#"
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-html="true"
+                      data-content="This symbol tells you which <strong>Magic</strong> set the card is from. The color of the symbol tells you the card's <em>rarity</em>."
+                      data-placement="right"
+                      title="Expansion/Set Symbol"
+                      style="position: absolute; left: 76.6%; top: 55.41%; width: 18.49%; height: 6.22%; z-index: 2;"
+                    ></a>
+                    <a
+                      href="#"
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-html="true"
+                      data-content="This is where the card's <em>abilities</em> appear. You may also find flavor text in <i>italic</i> that tell you more about the world of <strong>Magic</strong>."
+                      data-placement="bottom"
+                      title="Text Box"
+                      style="position: absolute; left: 8.3%; top: 64.59%; width: 76.6%; height: 13.78%; z-index: 2;"
+                    ></a>
+                    <a
+                      href="#"
+                      data-toggle="popover"
+                      data-trigger="hover"
+                      data-html="true"
+                      data-content="A creature's power <i>(the first number)</i> is how much damage it deals in combat. Its toughness <i>(second number)</i> is how much damage must be dealt to destroy it."
+                      data-placement="bottom"
+                      title="Power and Toughness"
+                      style="position: absolute; left: 77.36%; top: 89.73%; width: 17.36%; height: 5.41%; z-index: 2;"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
     </main>
 
     <!-- Optional JavaScript -->
@@ -422,5 +527,11 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(function() {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
   </body>
 </html>
