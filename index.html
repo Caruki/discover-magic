@@ -80,8 +80,7 @@
               >
               <div class="dropdown-menu" aria-labelledby="what-magic">
                 <a class="dropdown-item" href="#intro">Introduction</a>
-                <a class="dropdown-item" href="#">Rules</a>
-                <a class="dropdown-item" href="#">Decks</a>
+                <a class="dropdown-item" href="#card">Example card</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -97,16 +96,16 @@
                 How to play
               </a>
               <div class="dropdown-menu" aria-labelledby="how-to">
-                <a class="dropdown-item" href="#">Basics</a>
-                <a class="dropdown-item" href="#">Rules</a>
-                <a class="dropdown-item" href="#">Build your own deck</a>
+                <a class="dropdown-item" href="#basics">Basics</a>
+                <a class="dropdown-item" href="#rules">Rules</a>
+                <a class="dropdown-item disabled" href="#decks">Build your own deck</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tipps & Tricks</a>
+              <a class="nav-link disabled" href="#">Tipps & Tricks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Questions & FAQ</a>
+              <a class="nav-link disabled" href="#">Questions & FAQ</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -121,13 +120,13 @@
                 Helpful Links
               </a>
               <div class="dropdown-menu" aria-labelledby="links">
-                <a class="dropdown-item" href="#">Official Site</a>
-                <a class="dropdown-item" href="#">Wiki</a>
-                <a class="dropdown-item" href="#">blah</a>
+                <a class="dropdown-item" href="https://magic.wizards.com/en">Official Site</a>
+                <a class="dropdown-item" href="https://mtg.gamepedia.com/Magic:_The_Gathering_Arena">Gamepedia</a>
+                
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link disabled" href="#">About</a>
             </li>
           </ul>
         </div>
@@ -406,7 +405,7 @@
       <hr />
       <!---Basic Card structure-->
       <section>
-        <div class="container">
+        <div class="container" id="card">
           <!---Intro to popover card-->
           <div class="row ">
             <div class="col d-flex justify-content-center">
@@ -508,6 +507,153 @@
         </div>
       </section>
       <hr />
+      <!---How to play-->
+      <section id="basics">
+        <div>
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="resources/mtgarena/mtgarenawallpaper600.jpg"
+            />
+            <source
+              media="(max-width: 799px)"
+              srcset="resources/mtgarena/mtgarenawallpaper800.jpg"
+            />
+            <source
+              media="(max-width: 1399px)"
+              srcset="resources/mtgarena/mtgarenawallpaper1400.jpg"
+            />
+            <source
+              media="(min-width: 1400px)"
+              srcset="resources/mtgarena/mtgarenawallpaper1900.jpg"
+            />
+
+            <img
+              src="resources/mtgarena/mtgarenawallpaper600.jpg"
+              alt="MTG Arena wallpaper"
+              class="d-block w-100 img-fluid"
+            />
+          </picture>
+        </div>
+        <div
+          style="background-image:url('resources/mtgarena/background.jpg');  background-repeat: no-repeat; background-size:cover;"
+        >
+          <div
+            class="container d-flex justify-content-sm-center"
+            style="max-width:550px; padding:10px"
+          >
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/RZyXU1L3JXk"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!---Rules-->
+      <section id="rules">
+        <div class="container" style="margin-bottom:20px;">
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <h2 style="font-family: Roboto bold;">
+                Rules from and for beginners
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <h3 style="font-family: Roboto light;">
+                Ways to enhance your first few hours with Magic the Gathering
+                Arena
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row" style="padding-top:20px">
+            <div class="col">
+              <div class="card">
+                <div class="card-header" style="font-family: Roboto light;">
+                  Rule no.1
+                </div>
+                <div class="card-body">
+                  <blockquote
+                    class="blockquote mb-0"
+                    style="font-family: Roboto light;"
+                  >
+                    <p>
+                      Start playing before reading or watching too many
+                      tutorials. Alternatively watch some Let's Plays that you
+                      enjoy.
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-header" style="font-family: Roboto light;">
+                  Rule no.2
+                </div>
+                <div class="card-body">
+                  <blockquote
+                    class="blockquote mb-0"
+                    style="font-family: Roboto light;"
+                  >
+                    <p>
+                      Start playing with the basic standard decks, getting to
+                      know the cards. Then build your own deck based on one of
+                      those.
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-header" style="font-family: Roboto light;">
+                  Rule no.3
+                </div>
+                <div class="card-body">
+                  <blockquote
+                    class="blockquote mb-0"
+                    style="font-family: Roboto light;"
+                  >
+                    <p>
+                      Play whatever deck and color and strategy you enjoy.
+                      <strong>Ignore meta.</strong>
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+        </div>
+            <div class="row" style="padding-top: 20px">
+            <div class="col d-flex justify-content-center">
+                <div class="card">
+                  <div class="card-header" style="font-family: Roboto light;">
+                    Rule no.4
+                  </div>
+                  <div class="card-body">
+                    <blockquote
+                      class="blockquote mb-0"
+                      style="font-family: Roboto light;"
+                    >
+                      <p>
+                        <div style="font-family: monospace; font-size:larger">Read the card texts. And read it again. </div><br>
+                        Always read it during a game. Your own cards and the opponent ones.
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </section>
     </main>
 
     <!-- Optional JavaScript -->
